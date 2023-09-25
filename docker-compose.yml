@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8080:80" # Map container port 80 to host port 8080
+    volumes:
+      - .:/var/www/html # Mount the current directory into the container
+    # environment:
+    #   APACHE_RUN_USER: www-data # Set Apache's user to match the container user      
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: withu
