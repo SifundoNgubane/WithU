@@ -66,7 +66,7 @@ include_once 'includes/header.php';
 
     <div class="container">
         <h1 style="color:green"> WithU Career Expo</h1>
-        <p>Date: August 28, 2023
+        <p>Date: November 28, 2023
             <br>Location:Bona Comprehensive School ,Soweto ,Johannesburg , 1723<br>Gauteng, South Africa</p>
 
         <h2 style="color:green">About the Event</h2>
@@ -90,7 +90,7 @@ include_once 'includes/header.php';
         <div class="countdown" id="countdown">
             <?php
             // Set the date and time of the event
-            $eventDate = strtotime('August 28, 2023 00:00:00');
+            $eventDate = strtotime('November 28, 2023 00:00:00');
             $now = time();
             $distance = $eventDate - $now;
 

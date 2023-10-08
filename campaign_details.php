@@ -67,28 +67,8 @@
     }
     ?>
 
-    <!-- Progress bar -->
-    <div class="progress-container">
-        <div class="donation--container" style="margin-top: 20px;">
-            <h1 id="donation--user" class="donation--user">Your Progress</h1>
-            <main role="main">
-    <!-- progress bar -->
-      <span class="donation--title">Reached:</span>
-      <span id="donation--goal" class="donation--goal"></span>
-      <div class="donation--bar">
-        <div class="donation--rounded">
-          <div id="donation--progress" class="donation--progress" style="width: 0;"></div>
-        </div>
-        <div id="donation--number" class="donation--number" style="left: 0;"></div>
-        <span id="donation--status" class="donation--status"></span>
-      </div>
-      <form class="form--container">
-        <input id="donation--amount" class="input" type="number" min="1" placeholder="R enter amount">
-        <input id="donate" class="button" type="submit" value="Donate">
-        
-      </form>
-  
-    </div>
+ 
+    
   </main>
         </div>
     </div>
@@ -105,7 +85,7 @@
       </div>
       <div class="modal-body">
         <form name="frm1" method="post">
-            <input type="hidden" id="commentid" name="Rcommentid">
+            
           <div class="form-group">
             <label for="usr">Write your name:</label>
             <input type="text" class="form-control" name="Rname" required>
@@ -126,34 +106,12 @@
 
 <div class="panel panel-default" style="margin-top:50px">
   <div class="panel-body">
-    <h3>Comments</h3>
-    <hr>
-    <form name="frm" method="post">
-        <input type="hidden" id="commentid" name="Pcommentid" value="0">
-  <div class="form-group">
-    <label for="usr">Write your name:</label>
-    <input type="text" class="form-control" name="name" required>
-  </div>
-    <div class="form-group">
-      <label for="comment">Write your comment</label>
-      <textarea class="form-control" rows="5" name="msg" required></textarea>
-    </div>
-   <input type="button" id="butsave" name="save" class="btn btn-primary" value="Send">
-  </form>
+  <a href="donation_form.php"><button type="button" id="btnreply" name="btnreply" class="btn btn-primary" >Donate NOW</button></a>
+    
   </div>
 </div>
   
 
-<div class="panel panel-default">
-  <div class="panel-body">
-    <h4>Recent comments</h4>           
-  <table class="table" id="MyTable" style="background-color: #edfafa; border:0px;border-radius:10px">
-    <tbody id="record">
-    
-    </tbody>
-  </table>
-  </div>
-</div>
 
 </div>
 
